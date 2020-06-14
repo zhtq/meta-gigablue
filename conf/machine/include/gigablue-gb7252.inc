@@ -42,6 +42,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = " \
     gb-v3ddriver-gb7252 \
     gb-qteglfs-platform \
+    kernel-module-8812au \
     "
 
 EXTRA_IMAGEDEPENDS = "\
