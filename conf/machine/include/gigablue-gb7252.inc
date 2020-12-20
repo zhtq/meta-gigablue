@@ -57,3 +57,9 @@ OPTIONAL_BSP_ENIGMA2_PACKAGES = "\
     enigma2-plugin-extensions-hbbtv-gb \
     enigma2-plugin-extensions-chromium \
     "
+
+MACHINE_FEATURES += "colorlcd gigabluelcd"
+
+SOC_FAMILY = "bcm7252s"
+
+STB_PLATFORM = "gb7252"
