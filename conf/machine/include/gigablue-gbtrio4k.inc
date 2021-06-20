@@ -3,7 +3,6 @@ KERNEL_MODULE_AUTOLOAD += "xfs"
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
-
 MTD_KERNEL = "mmcblk0p12"
 MTD_ROOTFS = "mmcblk0p16"
 KERNEL_FILE = "kernel.bin"
@@ -57,7 +56,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
 	kernel-module-zd1211rw \
 	"
 	
-MACHINE_FEATURES += " alsa usbhost wlan switchoff osdposition hdmicec"
+MACHINE_FEATURES += " alsa usbhost wlan switchoff osdposition hdmicec AV_JACK"
 
 IMAGE_CLASSES  += "gigablue-emmc_image"
 IMAGE_FSTYPES += "gigablueemmc"
@@ -137,3 +136,9 @@ IMAGE_CMD_gigablueemmc_append = "\
 IMAGE_CMD_prepend = " \
     rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
     "
+
+BOX_BRAND = "gigablue"
+
+STB_PLATFORM = "gbmv200"
+
+RCNAME = "gb3"

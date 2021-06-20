@@ -13,3 +13,9 @@ PREFERRED_PROVIDER_virtual/blindscan-dvbc = "gigablue-blindscan-utils-arm"
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "gigablue-blindscan-utils-arm"
 
 require conf/machine/include/soc-family.inc
+
+ROOTFS_FILE = "rootfs.tar.bz2"
+MTD_KERNEL = "mmcblk0p4"
+MTD_ROOTFS = "mmcblk0p5"
+MTD_BOOTFS = "mmcblk0p1"
+MTD_BLACK  = "mmcblk0"

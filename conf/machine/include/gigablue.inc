@@ -6,4 +6,10 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 IMAGEVERSION := "${DISTRO_NAME}-${DISTRO_VERSION}-${DATE}"
 IMAGEVERSION[vardepsexclude] = "DATE"
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff HDMI"
+
+BOX_BRAND = "gigablue"
+
+BLINDSCAN_BINARY = "gigablue_blindscan"
+
+RCNAME ?= "gb0"
